@@ -1,0 +1,15 @@
+{
+  "originHash" : "2ec0aaa4f3d32259a617d1c92ada948cafdd798816e52a35130b39606b03fd0a",
+  "pins" : [
+    {
+      "identity" : "spencekit.swift",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/steadman1/SpenceKit.swift",
+      "state" : {
+        "branch" : "main",
+        "revision" : "c3189f33b8f72060f24a231891b9aeb4cbbf7298"
+      }
+    }
+  ],
+  "version" : 3
+}

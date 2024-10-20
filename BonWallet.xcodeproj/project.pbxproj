@@ -6,6 +6,10 @@
 	objectVersion = 77;
 	objects = {
 
+/* Begin PBXBuildFile section */
+		080396EF2CC494B9001FD108 /* SpenceKit in Frameworks */ = {isa = PBXBuildFile; productRef = 080396EE2CC494B9001FD108 /* SpenceKit */; };
+/* End PBXBuildFile section */
+
 /* Begin PBXContainerItemProxy section */
 		0803969F2CC3E9F1001FD108 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -52,6 +56,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				080396EF2CC494B9001FD108 /* SpenceKit in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -78,6 +83,7 @@
 				0803968E2CC3E9EF001FD108 /* BonWallet */,
 				080396A12CC3E9F1001FD108 /* BonWalletTests */,
 				080396AB2CC3E9F1001FD108 /* BonWalletUITests */,
+				080396ED2CC494B9001FD108 /* Frameworks */,
 				0803968D2CC3E9EF001FD108 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -90,6 +96,13 @@
 				080396A82CC3E9F1001FD108 /* BonWalletUITests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		080396ED2CC494B9001FD108 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -112,6 +125,7 @@
 			);
 			name = BonWallet;
 			packageProductDependencies = (
+				080396EE2CC494B9001FD108 /* SpenceKit */,
 			);
 			productName = BonWallet;
 			productReference = 0803968C2CC3E9EF001FD108 /* BonWallet.app */;
@@ -195,6 +209,9 @@
 			);
 			mainGroup = 080396832CC3E9EF001FD108;
 			minimizedProjectReferenceProxies = 1;
+			packageReferences = (
+				080396EC2CC49386001FD108 /* XCRemoteSwiftPackageReference "SpenceKit" */,
+			);
 			preferredProjectObjectVersion = 77;
 			productRefGroup = 0803968D2CC3E9EF001FD108 /* Products */;
 			projectDirPath = "";
@@ -558,6 +575,25 @@
 			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		080396EC2CC49386001FD108 /* XCRemoteSwiftPackageReference "SpenceKit" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/steadman1/SpenceKit.swift";
+			requirement = {
+				branch = main;
+				kind = branch;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		080396EE2CC494B9001FD108 /* SpenceKit */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 080396EC2CC49386001FD108 /* XCRemoteSwiftPackageReference "SpenceKit" */;
+			productName = SpenceKit;
+		};
+/* End XCSwiftPackageProductDependency section */
 	};
 	rootObject = 080396842CC3E9EF001FD108 /* Project object */;
 }
