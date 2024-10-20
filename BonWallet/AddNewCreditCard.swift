@@ -88,9 +88,9 @@ struct AddNewCreditCardView: View {
                                                     HStack {
                                                         VStack {
                                                             Text("\(pm.multiplier)x")
-                                                                .font(.SpenceKit.SerifLargeTitleFont)
+                                                                .font(.SpenceKit.SerifTertiaryTitleFont)
                                                             Text("points")
-                                                                .font(.SpenceKit.SansBodyFont)
+                                                                .font(.SpenceKit.SansHeadlineFont)
                                                         }
                                                         
                                                         Text(pm.description)
@@ -104,7 +104,7 @@ struct AddNewCreditCardView: View {
                                                 HStack {
                                                     (
                                                         Text("Service\nMultipliers")
-                                                            .font(.SpenceKit.SerifTertiaryTitleFont)
+                                                            .font(.SpenceKit.SerifLargeTitleFont)
                                                         + Text(" (\(selectedCard!.serviceMultipliers.count))")
                                                             .font(.SpenceKit.SerifTertiaryTitleFont)
                                                     )
@@ -116,6 +116,12 @@ struct AddNewCreditCardView: View {
                                                     
                                                     VStack(alignment: .leading) {
                                                         HStack {
+                                                            Image(sm.serviceName.lowercased())
+                                                                .resizable()
+                                                                .aspectRatio(contentMode: .fill)
+                                                                .frame(width: 24, height: 24)
+                                                                .clipShape(RoundedRectangle(cornerRadius: 4))
+                                                            
                                                             Text("from \(sm.serviceName)")
                                                                 .font(.SpenceKit.SansHeadlineFont)
                                                             
@@ -126,7 +132,7 @@ struct AddNewCreditCardView: View {
                                                                 Text("\(sm.multiplier)x")
                                                                     .font(.SpenceKit.SerifTertiaryTitleFont)
                                                                 Text("points")
-                                                                    .font(.SpenceKit.SansBodyFont)
+                                                                    .font(.SpenceKit.SansHeadlineFont)
                                                             }
                                                             
                                                             Text(sm.description)
